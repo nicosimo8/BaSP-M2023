@@ -9,6 +9,7 @@ Radium Rocket weekly progression
 -Created and pushed the index.html to github
 -Uploaded the images folder to github
 -Created and pushed the README.md to github
+-Modified the "Super Admin" Figma screenflow
 ```
 
 ### Notes:
