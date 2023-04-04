@@ -1,0 +1,655 @@
+body{
+  background-color: #eee;
+  color: #fff;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+header{
+  width: 1512px;
+  height: 217px;
+}
+
+header a{
+  display: inline-block;
+  margin: 42px 0px 0px 46px;
+  width: 90.72px;
+  height: 115px;
+}
+
+.radium-rocket-main-logo{
+  width: 90.72px;
+  height: 115px;
+}
+
+header h1{
+  display: inline-block;
+  margin-left: 492.28px;
+  color: #373867;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+header p{
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 776px;
+  color: #373867;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+aside{
+  background-color: #373867;
+  color: #fff;
+  float: left;
+  width: 271px;
+  height: 5697px;
+  box-sizing: border-box;
+}
+
+aside ul{
+  margin-top: 80px;
+  list-style: none;
+  text-align: center;
+}
+
+aside li{
+  padding-bottom: 50.48px;
+  text-decoration: none;
+}
+
+aside h3{
+  width: 152.09px;
+  height: 32.38px;
+  margin: 127.13px 0px 0px 59.78px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  line-height: 27.1px;
+}
+
+aside p{
+  width: 244.1px;
+  margin: 7.62px 0px 0px 13px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+aside a{
+  text-align: center;
+  text-decoration: none;
+}
+
+aside a:visited{
+  color: #fff;
+}
+
+.top-banner{
+  background-image: url('../Assets/Images/top-background-banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1241px;
+  height: 624px;
+  box-sizing: border-box;
+}
+
+.top-banner h2{
+  display: inline-block;
+  width: 1030px;
+  height: 70px;
+  margin: 178px 0px 0px 187.13px;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 70.31px;
+}
+
+.top-banner p{
+  width: 597px;
+  height: 158px;
+  margin: 64px 0px 0px 321px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+section{
+  display:inline-block;
+  width: 1241px;
+  overflow: hidden;
+}
+
+.why-mega-rocket-box h3{
+  display: inline-block;
+  width: 392px;
+  height: 47px;
+  margin: 122px 0px 0px 41px;
+  color: #373867;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.radium-rocket-small-logo{
+  width: 44px;
+  height: 50px;
+  margin: 45px 0px 0px 11px; /*margin top doesn't work*/
+}
+
+.people-exercising-picture{
+  float: right;
+  width: 577px;
+  height: 577px;
+  margin-top: 45px;
+}
+
+.why-mega-rocket-box p{
+  display: inline-block;
+  width: 570px;
+  height: 282px;
+  margin: 56px 0px 0px 49px;
+  color: #373867;
+  font-size: 40px;
+  line-height: 46.88px;
+}
+
+.activities-title-block{
+  background-color: #373867;
+  width: 700px;
+  height: 112px;
+  margin-top: 45px;
+}
+
+.activities-section h3{
+  font-size: 40px;
+  padding: 32px 111px 33px 179px;
+  text-transform: uppercase;
+}
+
+.activities-images-box{
+  display: inline-block;
+  margin: 118px 0px 0px 159px
+}
+
+.activities-images-box img{
+  display: inline-block;
+  width: 461px;
+  height: 471px;
+  margin: -5px 0px 0px -5px;
+}
+
+.membership-title-block{
+  background-color: #373867;
+  width: 700px;
+  height: 112px;
+  margin-top: 118px;
+}
+
+.membership-section h3{
+  padding: 32px 80px 33px 80px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.membership-section article{
+  display: inline-block;
+  height: 772.55px;
+  margin-right: -5px;
+}
+
+.only-classes-member-article{
+  margin: 108px 0px 0px 45px;
+}
+
+.only-classes-member-image{
+  width: 384.74px;
+  height: 326.61px;
+}
+
+.only-classes-member-block{
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  color: #373867;
+  width: 325.08px;
+  height: 358.74px;
+  margin-left: 35.95px;
+  margin-top: -65px;
+}
+
+.only-classes-member-banner{
+  background: rgba(58, 59, 105, 0.4);
+  width: 100%;
+  height: 46.66px;
+  border-radius: 3.8245px;
+}
+
+.only-classes-text{
+  margin-top: 26.78px;
+  color: #AACE9B;
+  font-size: 30.6px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.only-classes-member-block .membership-text{
+  color: #373867;
+  font-size: 30.6px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.only-classes-member-block ul{
+  margin: 33.65px 0px 0px 24.05px;
+  font-size: 15.3px;
+  font-weight: 400;
+}
+
+.only-classes-member-block li{
+  padding-bottom: 16.83px;
+  list-style-image: url('../Assets/Images/member-check.png');
+}
+
+.only-classes-member-block .member-separation-line{
+  background-color: #373867;
+  margin-top: 34.25px;
+  width: 100%;
+  height: 0.1px;
+}
+
+.only-classes-final-text{
+  display: inline-block;
+  margin-top: 17.69px;
+  margin-left: 100.05px;
+  color: #373867;
+  width: 132px;
+  height: 41px;
+  font-size: 10.71px;
+  font-weight: 400;
+  line-height: 12.55px;
+  text-align: left;
+}
+
+.only-classes-subscribe-box{
+  background-color: #49A37B;
+  width: 325.08px;
+  height: 72.67px;
+  margin-left: 35.95px;
+}
+
+.only-classes-subscribe-box a{
+  display: inline-block;
+  margin-top: 21.6px;
+  margin-left: 83.27px;
+  font-size: 30.6px;
+  text-decoration: none;
+}
+
+.only-classes-subscribe-box a:visited{
+  color: #fff;
+}
+
+.classic-member-image{
+  width: 384.74px;
+  height: 326.61px;
+}
+
+.classic-member-block{
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  color: #373867;
+  width: 325.08px;
+  height: 412.28px;
+  margin-left: 35.95px;
+  margin-top: -65px;
+}
+
+.classic-member-banner{
+  background: rgba(58, 59, 105, 0.4);
+  width: 100%;
+  height: 46.66px;
+  border-radius: 3.8245px;
+}
+
+.classic-text{
+  margin-top: 26.78px;
+  color: #AACE9B;
+  font-size: 30.6px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.classic-member-block .membership-text{
+  color: #373867;
+  font-size: 30.6px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.classic-member-block ul{
+  margin: 33.65px 0px 0px 24.05px;
+  font-size: 15.3px;
+  font-weight: 400;
+}
+
+.classic-member-block li{
+  padding-bottom: 16.83px;
+  list-style-image: url('../Assets/Images/member-check.png');
+}
+
+.classic-member-block .member-separation-line{
+  background-color: #373867;
+  margin-top: 34.25px;
+  width: 100%;
+  height: 0.1px;
+}
+
+.classic-final-text{
+  display: inline-block;
+  margin-top: 17.69px;
+  margin-left: 100.05px;
+  color: #373867;
+  width: 132px;
+  height: 41px;
+  font-size: 10.71px;
+  font-weight: 400;
+  line-height: 12.55px;
+  text-align: left;
+}
+
+.join-now-box{
+  background-color: #49A37B;
+  width: 325.08px;
+  height: 72.67px;
+  margin-left: 35.95px;
+}
+
+.join-now-box a{
+  display: inline-block;
+  margin-top: 21.6px;
+  margin-left: 83.27px;
+  font-size: 30.6px;
+  text-decoration: none;
+}
+
+.join-now-box a:visited{
+  color: #fff;
+}
+
+.black-member-image{
+  width: 384.74px;
+  height: 326.61px;
+}
+
+.black-member-block{
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  color: #373867;
+  width: 325.08px;
+  height: 445.94px;
+  margin-left: 35.95px;
+  margin-top: -65px;
+}
+
+.black-member-banner{
+  background: rgba(58, 59, 105, 0.4);
+  width: 100%;
+  height: 46.66px;
+  border-radius: 3.8245px;
+}
+
+.black-text{
+  margin-top: 26.78px;
+  color: #373867;
+  font-size: 30.6px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.black-member-block .membership-text{
+  color: #373867;
+  font-size: 30.6px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.black-member-block ul{
+  margin: 33.65px 0px 0px 24.05px;
+  font-size: 15.3px;
+  font-weight: 400;
+}
+
+.black-member-block li{
+  padding-bottom: 16.83px;
+  list-style-image: url('../Assets/Images/member-check.png');
+}
+
+.black-member-block .member-separation-line{
+  background-color: #373867;
+  margin-top: 34.25px;
+  width: 100%;
+  height: 0.1px;
+}
+
+.black-final-text{
+  display: inline-block;
+  margin-top: 17.69px;
+  margin-left: 100.05px;
+  color: #373867;
+  width: 132px;
+  height: 41px;
+  font-size: 10.71px;
+  font-weight: 400;
+  line-height: 12.55px;
+  text-align: left;
+}
+
+.go-all-in-box{
+  background-color: #49A37B;
+  width: 325.08px;
+  height: 72.67px;
+  margin-left: 35.95px;
+}
+
+.go-all-in-box a{
+  display: inline-block;
+  margin-top: 21.6px;
+  margin-left: 83.27px;
+  font-size: 30.6px;
+  text-decoration: none;
+}
+
+.go-all-in-box a:visited{
+  color: #fff;
+}
+
+.marketing-and-info{
+  background-color: #AACE9B;
+  width: 1241px;
+  height: 508.42px;
+}
+
+.marketing-title{
+  width: 495.3px;
+  height: 154px;
+  margin: 91.84px 0px 0px 118.09px;
+}
+
+.marketing-title h3{
+  font-size: 65.6px;
+  line-height: 76.88px;
+  text-transform: uppercase;
+}
+
+.article-reservation{
+  margin-left: 118.09px;
+}
+
+.article-reservation p{
+  font-size: 32.8px;
+  font-weight: 400;
+  line-height: 38.44px;
+}
+
+.reservation-text-box{
+  display: inline-block;
+  width: 520px;
+}
+
+.article-subtitle{
+  margin-top: 19.85px;
+  text-transform: uppercase;
+}
+
+.article-paragraph{
+  width: 530.57px;
+}
+
+.article-reservation img{
+  display: inline-block;
+  width: 326.38px;
+  height: 326.38px;
+  margin: -182.82px 0px 0px 172.21px; /*negative margin woorks well... weird*/
+}
+
+/*This is for better workout, i'll fix it as soon we apply JS*/
+.article-membership, .article-schedule, .article-contact{
+  display: none;
+}
+
+.bottom-form{
+  display: block;
+  background-color: #fff;
+  color: #373867;
+  width: 665px;
+  height: 694px;
+  border-radius: 20px;
+  margin: 143.57px 0px 0px 290px;
+}
+
+.bottom-form h4{
+  display: inline-block;
+  margin: 36px 0px 0px 168px;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.bottom-form div{
+  height: 36px;
+  border: 1px solid #373867;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.question-one, .question-two, .question-three, .bottom-form-input-submit{
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.question-one{
+  width: 223px;
+  margin: 27px 0px 0px 46px;
+}
+
+.question-two{
+  width: 300px;
+  margin-left: 51px; 
+}
+
+.question-three{
+  width: 392px;
+  margin: 29px 0px 0px 125px;
+}
+
+.bottom-form-name{
+  display: inline-block;
+  width: 193px;
+  height: 37px;
+  margin: 63px 0px 0px 116px;
+  border-color: #373867;
+  border-radius: 4px;
+}
+
+.bottom-form-surname{
+  display: inline-block;
+  width: 193px;
+  height: 37px;
+  margin-left: 39px;
+  border-color: #373867;
+  border-radius: 4px;
+}
+
+.bottom-form-email{
+  display: inline-block;
+  width: 433px;
+  height: 37px;
+  margin: 55px 0px 0px 116px;
+  border-color: #373867;
+  border-radius: 4px;
+}
+
+.bottom-form-write-label{
+  display: inline-block;
+  margin: 47px 0px 0px 74px;
+  font-size: 13px;
+}
+
+.bottom-form-text-area{
+  width: 497px;
+  height: 139px;
+  margin: 12.57px 0px 0px 74px;
+  border: 1px solid #eeeeeeab;
+  box-sizing: border-box;
+}
+
+.bottom-form-input-submit{
+  width: 156px;
+  height: 35px;
+  margin: 43px 0px 0px 254px; /*top 43*/
+  background-color: #AACE9B;
+  border-radius: 5px;
+}
+
+footer{
+  float: left;
+  width: 100%;
+  height: 139px;
+  background-color: #fff;
+  text-align: center;
+}
+
+footer a{
+  display: inline-block;
+  margin-top: 44px;
+  padding: 0px 0px 44.51px 145.51px;
+}
+
+.footer-text-copyright{
+  display: inline-block;
+  background-color: #D9D9D9;
+  width: 100%;
+  height: 57px;
+  margin-top: -5px;
+}
+
+.footer-text-copyright p{
+  margin: 16px 0px 0px 170.53px;
+  color: #000;
+  font-size: 14px;
+}
