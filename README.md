@@ -1,16 +1,41 @@
 # README
 
-Radium Rocket weekly progression
+This repository is the weekly progress tracker in the radium rocket bootcamp.
+In it we will find a gym website simulacrum.
 
-## Week 02
+#
+
+## Weekly progression
+
+### Week 01
 
 ```
--Created the github BaSP-M2023 repository (link below)
+-Watch and learn about Figma
+-Watch and learn about Agile methodologies
+-Created a Figma project
+-My rol: Did the Super Admin screenflow
+```
+
+### Week 02
+
+```
+-Watch and learn about HTML
+-Watch and learn about README documents
+-Watch and learn about github
+-Created the github BaSP-M2023 repository
 -Created and pushed the index.html to github
 -Uploaded the images folder to github
 -Created and pushed the README.md to github
 -Modified the "Super Admin" Figma screenflow
 ```
 
-### Notes:
--BaSP-M2023 [repository](https://github.com/nicosimo8/BaSP-M2023) link
+### Week 03
+
+```
+-Watch and learn about CSS
+-Make the necessary changes to the Index according to the weekly feedback
+-Class attributes classes added to the relevant
+-CSS style created
+-CSS reset created
+-Week 3 progression added to the README
+```
