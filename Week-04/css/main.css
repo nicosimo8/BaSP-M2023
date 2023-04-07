@@ -1,0 +1,39 @@
+/*Menu*/
+aside{
+    display: none;
+    z-index: -100;
+    float: right;
+    background-color: #373867;
+    color: #fff;
+    width: 100%;
+}
+
+aside a{
+    color: #fff;
+    text-decoration: none;
+}
+
+aside ul{
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+aside li{
+    padding: 1em 1em;
+    text-transform: uppercase;
+}
+
+.aside-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Top*/
+
+/*Advertisement*/
+
+/*Activities*/
+
+/*Membership*/
+
+/*Form*/

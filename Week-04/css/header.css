@@ -6,6 +6,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 76px;
 }
 
 .header-img-container, .header-burger-container{
@@ -34,7 +35,7 @@ header{
 
 .header-title-text{
     font-size: 1.25em;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .header-subtitle-text{
@@ -44,7 +45,6 @@ header{
 
 .header-burger-container{
     flex-direction: column;
-    
 }
 
 .header-burger-container div{
