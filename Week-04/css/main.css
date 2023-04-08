@@ -48,7 +48,7 @@ aside li{
     text-align: center;
 }
 
-.top-section h1{
+.top-section h2{
     font-size: 1.19em;
     text-transform: uppercase;
 }
@@ -71,7 +71,7 @@ aside li{
     text-align: center;
 }
 
-.advertisement-section-container h1{
+.advertisement-section-container h2{
     font-size: 1.25em;
     text-transform: uppercase;
 }
@@ -106,7 +106,7 @@ aside li{
     background-color: #373867;
 }
 
-.activities-section-container h1{
+.activities-section-container h2{
     color: #fff;
     font-size: 1.25em;
     text-transform: uppercase;
@@ -119,7 +119,6 @@ aside li{
 
 
 /*Membership*/
-
 .membership-title-box{
     display: flex;
     justify-content: center;
@@ -127,12 +126,91 @@ aside li{
     align-self: flex-start;
     width: 80%;
     height: 53px;
+    margin: 70px 0px 60px 0px;
     background-color: #373867;
 }
 
-.membership-section-container h1{
+.membership-section-container h2{
     color: #fff;
     font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.membership-article-container-classes, .membership-article-container-classic, .membership-article-container-black{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article img{
+    width: 100%;
+    height: 326.61px;
+}
+
+.membership-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 485px;
+    margin: -56.65px 0px 59.82px 0px;
+    background-color: #fff;
+}
+
+.membership-card-top-box{
+    width: 100%;
+    height: 46.66px;
+    border-radius: 3.82px;
+    background-color: #37386766;
+}
+
+.membership-card-container h3{
+    width: 70%;
+    font-size: 1.9125em;
+    line-height: 1.12em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 span{
+    color: #AACE9B;
+}
+
+.membership-card-container ul, p{
+    font-size: 0.95625em;
+    font-weight: 400;
+    text-align: left;
+}
+
+.membership-card-container li{
+    padding-bottom: 16.83px;
+    list-style-image: url('../../Assets/Images/member-check.png');
+}
+
+.membership-card-separation-line{
+    background-color: #373867;
+    width: 100%;
+    height: 1px;
+}
+
+.membership-card-bottom-text{
+    width: 70%;
+}
+
+.membership-card-bottom-confirm-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background-color: #49A37B;
+    color: #fff;
+}
+
+.membership-card-bottom-confirm-box p{
+    font-size: 1.9125em;
     text-transform: uppercase;
 }
 
