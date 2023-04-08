@@ -9,18 +9,18 @@ header{
     height: 76px;
 }
 
-.header-img-container, .header-burger-container{
+.header-image-container, .header-burger-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25%;
 }
 
-.header-img-container{
+.header-image-container{
     width: 33%;
 }
 
-.header-img-container img{
+.header-image-container img{
     width: 57px;
     height: 64px;
 }

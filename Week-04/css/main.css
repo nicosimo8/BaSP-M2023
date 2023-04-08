@@ -62,9 +62,78 @@ aside li{
 }
 
 /*Advertisement*/
+.advertisement-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 182px;
+    text-align: center;
+}
+
+.advertisement-section-container h1{
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.advertisement-section-container p{
+    width: 309px;
+    margin-top: 30px;
+    font-size: 0.9375em;
+    line-height: 1.09875em;
+}
+
+.advertisement-image{
+    display: none;
+}
 
 /*Activities*/
+.activities-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1581px;
+}
+
+.activities-title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    width: 80%;
+    height: 53px;
+    background-color: #373867;
+}
+
+.activities-section-container h1{
+    color: #fff;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.activities-section-container img{
+    width: 269px;
+    height: 270px;
+}
+
 
 /*Membership*/
+
+.membership-title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    width: 80%;
+    height: 53px;
+    background-color: #373867;
+}
+
+.membership-section-container h1{
+    color: #fff;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
 
 /*Form*/
