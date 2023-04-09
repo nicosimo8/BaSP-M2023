@@ -269,3 +269,90 @@ h3 span{
 }
 
 /*Form*/
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 738px;
+}
+
+.form-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 313px;
+    height: 532px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.form-section-container h4{
+    font-size: 1.25em;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.form-question-one, .form-question-two, .form-question-three{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 0px;
+    font-size: 0.5em;
+    font-weight: 500;
+}
+
+.form-question-one, .form-question-two, .form-question-three, .form-section-container input{
+    height: 34px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+}
+
+.form-question-one, .form-question-two, .form-question-three, .form-bottom-name, .form-bottom-email, .form-bottom-text-area-container{
+    margin: 27px 0px 0px 25px;
+}
+
+.form-question-one{
+    width: 140px;
+}
+
+.form-question-two{
+    width: 196px;
+}
+
+.form-question-three{
+    width: 246px;
+}
+
+.form-bottom-name, .form-bottom-surname{
+    width: 116px;
+}
+
+.form-bottom-email{
+    width: 242px;
+}
+
+.form-bottom-text-area-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form-bottom-text-area-container label{
+    font-size: 0.8125em;
+    font-weight: 500;
+}
+
+.form-bottom-text-area-container textarea{
+    width: 247px;
+    height: 65px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.form-bottom-input-submit{
+    margin-left: 115px;
+    width: 83px;
+    height: 27.54px;
+    background-color: #AACE9B;
+}
