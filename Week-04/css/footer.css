@@ -1,0 +1,33 @@
+.footer-container{
+    background-color: #fff;
+}
+
+.footer-container img{
+    width: 28.82px;
+    height: 28.82px;
+}
+
+.icon-facebook, .icon-instagram{
+    margin-right: 50px;
+}
+
+.footer-social-media-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86px;
+    text-align: center;
+}
+
+.footer-copyright-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    background-color: #D9D9D9;
+}
+
+.footer-copyright-box p{
+    font-size: 0.625em;
+    color: #000;
+}
