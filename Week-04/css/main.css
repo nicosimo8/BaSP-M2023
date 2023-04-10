@@ -68,6 +68,13 @@ aside li{
     justify-content: center;
     align-items: center;
     height: 182px;
+}
+
+.advertisement-section-container div{ /*Change*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -220,15 +227,13 @@ h3 span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 546px;
     background-color: #AACE9B;
     color: #fff;
 }
 
 .info-section-container h3{
-    width: 65%;
-    font-size: 3.28125em;
+    margin-top: 10%;
+    font-size: 3em;
     line-height: 1.4em;
     text-transform: uppercase;
 }
@@ -238,12 +243,14 @@ h3 span{
     justify-content: space-between;
     align-items: center;
     width: 65%;
-    height: 45%;
+}
+
+.info-section-container h4, p{
     font-size: 1.25em;
     font-weight: 400;
 }
 
-.info-section-container h4{
+.info-section-container h4 {
     text-transform: uppercase;
 }
 
@@ -363,9 +370,220 @@ h3 span{
     /*// estilos correspondientes a mobile*/
 }
 @media(min-width: 601px) and (max-width: 1024px) {
-    /*// estilos correspondientes a tablet*/
+    /*Top*/
+    .top-section{
+        background-position: center;
+        height: 539px;
+    }
+
+    .top-section-container{
+        height: 539px;
+    }
+
+    .top-section h2{
+        font-size: 2.5em;
+    }
+
+    .top-section p{
+        margin-top: 44px;
+        width: 75%;
+        font-size: 1.25em;
+        font-weight: 400;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    /*Advertisement*/
+    .advertisement-section-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 444px;
+    }
+    
+    .advertisement-section-container div{ /*Change*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .advertisement-section-container h2{
+        scale: 0.9;
+        font-size: 2em;
+    }
+    
+    .advertisement-section-container p{
+        scale: 0.9;
+        margin-top: 30px;
+        font-size: 1.5em;
+        line-height: 1.4em;
+    }
+    
+    .advertisement-image{
+        display: block;
+        width: 50%;
+    }
+
+    /*Activities*/
+    .activities-section-container{
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 780px;
+    }
+
+    .activities-title-box{
+        height: 112px;
+    }
+
+    .activities-section-container h2{
+        font-size: 2.5em;
+    }
+
+    /*Membership*/
+    .membership-title-box{
+        height: 112px;
+        margin: 150px 0px 60px 0px;
+    }
+
+    .membership-section-container h2{
+        font-size: 2.2em;
+    }
+
+    .membership-article-container-classes, .membership-article-container-classic, .membership-article-container-black{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article img{
+        width: 60%;
+        height: 427px;
+    }
+
+    .membership-card-container{
+        width: 45%;
+        height: 564px;
+    }
+
+    .membership-card-container h3{
+        font-size: 2.2em;
+    }
+
+    .membership-card-container ul, p{
+        font-size: 1.2em;
+    }
+
+    .membership-card-bottom-confirm-box{
+        height: 95px;
+    }
+
+    .membership-card-bottom-confirm-box p{
+        font-size: 2.5em;
+    }
+
+    /*Info*/
+    .info-section-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info-section-container h3{
+        margin-top: 10%;
+        font-size: 3em;
+        line-height: 1.4em;
+    }
+    
+    .info-section-container article{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .info-section-container h4, p{
+        font-size: 1.25em;
+    }
+    
+    .info-section-container img{
+        width: 273px;
+        height: 280px;
+    }
+    
+    /*Form*/
+    .form-section-container{
+        width: 70%;
+    }
+
+    .form-section-container h4{
+        font-size: 1.25em;
+        font-weight: 500;
+        text-transform: uppercase;
+        align-self: center;
+    }
+
+    #landing-bottom-question-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-question-one, .form-question-two, .form-question-three, .form-bottom-name, .form-bottom-surname, .form-bottom-email, .form-bottom-text-area-container{
+        margin-top: 27px;
+    }
+
+    .form-question-one{
+        width: 35%;
+    }
+
+    .form-question-two{
+        width: 45%;
+    }
+
+    .form-question-three{
+        width: 60%;
+    }
+
+    .form-bottom-name, .form-bottom-surname{
+        width: 35%;
+    }
+
+    .form-bottom-surname{
+        margin-left: 6%;
+    }
+
+    .form-bottom-email{
+        width: 77%;
+    }
+
+    .form-bottom-text-area-container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 77%;
+    }
+
+    .form-bottom-text-area-container label{
+        font-size: 0.8125em;
+        font-weight: 500;
+    }
+
+    .form-bottom-text-area-container textarea{
+        width: 100%;
+    }
+
+    .form-bottom-input-submit{
+        width: 20%;
+        font-size: 0.9em;
+    }
 }
 @media(min-width: 1024px) {
+    /*Aside*/
     aside{
         display: flex;
         justify-content: center;
