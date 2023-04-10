@@ -354,5 +354,7 @@ h3 span{
     margin-left: 115px;
     width: 83px;
     height: 27.54px;
+    font-size: 0.625em;
+    font-weight: 500;
     background-color: #AACE9B;
 }
