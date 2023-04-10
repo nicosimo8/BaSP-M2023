@@ -358,3 +358,20 @@ h3 span{
     font-weight: 500;
     background-color: #AACE9B;
 }
+
+@media(min-width: 390px) and (max-width: 600px){
+    /*// estilos correspondientes a mobile*/
+}
+@media(min-width: 601px) and (max-width: 1024px) {
+    /*// estilos correspondientes a tablet*/
+}
+@media(min-width: 1024px) {
+    aside{
+        display: flex;
+        justify-content: center;
+        float: left;
+        width: 20%;
+        height: 5697px;
+    }
+    
+}

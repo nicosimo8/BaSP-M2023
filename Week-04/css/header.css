@@ -62,17 +62,6 @@ header{
         height: 127px;
     }
     
-    .header-image-container, .header-burger-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 25%;
-    }
-    
-    .header-image-container{
-        width: 33%;
-    }
-    
     .header-image-container img{
         width: 64px;
         height: 84px;
@@ -92,6 +81,26 @@ header{
         height: 3px;
     }
 }
-@media(min-width: 1025px) {
-    /*estilos correspondientes a desktop*/
+@media(min-width: 1024px) {
+    .header-container{
+        height: 217px;
+    }
+    
+    .header-image-container img{
+        width: 90.72px;
+        height: 115px;
+    }
+
+    .header-title-text{
+        font-size: 2.5em;
+    }
+
+    .header-subtitle-text{
+        font-size: 1.2em;
+        align-self: center;
+    }
+    
+    .header-burger-container{
+        visibility: hidden;
+    }
 }
