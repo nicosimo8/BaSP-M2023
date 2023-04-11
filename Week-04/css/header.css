@@ -12,6 +12,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 24%
 }
 
 .header-image-container img{

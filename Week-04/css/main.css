@@ -1,13 +1,9 @@
-/*Main*/
 main{
     display: flex;
 }
 
-/*Menu*/
 aside{
     display: none;
-    justify-content: flex-end;
-    z-index: -100;
     background-color: #373867;
     color: #fff;
 }
@@ -27,14 +23,13 @@ aside li{
     text-transform: uppercase;
 }
 
-/*Top*/
 .top-section{
     background-image: url("../../Assets/Images/top-background-banner.png");
     background-position: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    width: 100%;
+    width: 100vw;
     height: 245px;
 }
 
@@ -44,7 +39,6 @@ aside li{
     justify-content: center;
     align-items: center;
     height: 245px;
-    text-align: center;
 }
 
 .top-section h2{
@@ -53,14 +47,14 @@ aside li{
 }
 
 .top-section p{
-    margin-top: 17px;
-    width: 80%;
+    margin-top: 5%;
+    width: 70%;
     font-size: 0.625em;
     font-weight: 400;
     line-height: 0.9375em;
+    text-align: center;
 }
 
-/*Advertisement*/
 .advertisement-section-container{
     display: flex;
     flex-direction: column;
@@ -69,24 +63,25 @@ aside li{
     height: 182px;
 }
 
-.advertisement-section-container div{ /*Change*/
+.advertisement-section-container div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .advertisement-section-container h2{
     font-size: 1.25em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .advertisement-section-container p{
-    width: 309px;
+    width: 80%;
     margin-top: 30px;
     font-size: 0.9375em;
     line-height: 1.09875em;
+    text-align: center;
 }
 
 .advertisement-image{
@@ -99,7 +94,6 @@ aside li{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 1581px;
 }
 
 .activities-title-box{
@@ -109,6 +103,7 @@ aside li{
     align-self: flex-start;
     width: 80%;
     height: 53px;
+    margin-bottom: 10%;
     background-color: #373867;
 }
 
@@ -150,8 +145,7 @@ aside li{
 }
 
 article img{
-    width: 100%;
-    height: 326.61px;
+    width: 80%;
 }
 
 .membership-card-container{
@@ -159,9 +153,8 @@ article img{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
-    height: 485px;
-    margin: -56.65px 0px 59.82px 0px;
+    width: 70%;
+    margin: -15% 0 20% 0px;
     background-color: #fff;
 }
 
@@ -172,8 +165,11 @@ article img{
     background-color: #37386766;
 }
 
+.membership-card-container h3, .membership-card-container ul, .membership-card-bottom-text, .membership-card-bottom-confirm-box{
+    margin-top: 5%;
+}
+
 .membership-card-container h3{
-    width: 70%;
     font-size: 1.9125em;
     line-height: 1.12em;
     text-align: center;
@@ -191,6 +187,7 @@ h3 span{
 }
 
 .membership-card-container li{
+    margin-left: 10%;
     padding-bottom: 16.83px;
     list-style-image: url('../../Assets/Images/member-check.png');
 }
@@ -230,18 +227,26 @@ h3 span{
     color: #fff;
 }
 
-.info-section-container h3{
-    margin-top: 10%;
-    font-size: 3em;
-    line-height: 1.4em;
-    text-transform: uppercase;
-}
-
 .info-section-container article{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 65%;
+}
+
+.info-text-container, .info-section-container img{
+    margin: 10% 0 10% 0;
+}
+
+.info-text-container{
+    margin: 0 10% 10% 0;
+}
+
+.info-section-container h3{
+    margin-top: 10%;
+    font-size: 3em;
+    line-height: 1.4em;
+    text-transform: uppercase;
 }
 
 .info-section-container h4, p{
@@ -365,8 +370,23 @@ h3 span{
     background-color: #AACE9B;
 }
 
+@media(min-width: 390px) and (max-width: 600px){
+    aside{
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 245px;
+    }
+}
+
 @media(min-width: 601px) and (max-width: 1023px) {
-    /*Top*/
+    aside{
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 245px;
+    }
+
     .top-section{
         background-position: center;
         height: 539px;
@@ -389,32 +409,19 @@ h3 span{
         text-align: center;
     }
 
-    /*Advertisement*/
     .advertisement-section-container{
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
-        height: 444px;
-    }
-    
-    .advertisement-section-container div{ /*Change*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        text-align: left;
+        height: 500px;
     }
     
     .advertisement-section-container h2{
-        scale: 0.9;
-        font-size: 2em;
+        font-size: 1.9em;
     }
     
     .advertisement-section-container p{
-        scale: 0.9;
         margin-top: 30px;
-        font-size: 1.5em;
+        font-size: 1.4em;
         line-height: 1.4em;
     }
     
@@ -423,14 +430,10 @@ h3 span{
         width: 50%;
     }
 
-    /*Activities*/
     .activities-section-container{
-        display: flex;
         flex-direction: row;
         flex-flow: row wrap;
         justify-content: flex-start;
-        align-items: flex-start;
-        height: 780px;
     }
 
     .activities-title-box{
@@ -439,12 +442,6 @@ h3 span{
 
     .activities-section-container h2{
         font-size: 2.5em;
-    }
-
-    /*Membership*/
-    .membership-title-box{
-        height: 112px;
-        margin: 150px 0px 60px 0px;
     }
 
     .membership-section-container h2{
@@ -458,14 +455,8 @@ h3 span{
         align-items: center;
     }
 
-    article img{
-        width: 60%;
-        height: 427px;
-    }
-
     .membership-card-container{
-        width: 45%;
-        height: 564px;
+        width: 60%;
     }
 
     .membership-card-container h3{
@@ -484,7 +475,6 @@ h3 span{
         font-size: 2.5em;
     }
 
-    /*Info*/
     .info-section-container{
         flex-direction: row;
         justify-content: center;
@@ -492,7 +482,6 @@ h3 span{
     }
     
     .info-section-container h3{
-        margin-top: 10%;
         font-size: 3em;
         line-height: 1.4em;
     }
@@ -512,7 +501,6 @@ h3 span{
         height: 280px;
     }
     
-    /*Form*/
     .form-section-container{
         width: 70%;
     }
@@ -579,6 +567,7 @@ h3 span{
         font-size: 0.9em;
     }
 }
+
 @media(min-width: 1024px) {
     /*Aside*/
     aside{
