@@ -118,8 +118,6 @@ aside li{
     height: 270px;
 }
 
-
-/*Membership*/
 .membership-title-box{
     display: flex;
     justify-content: center;
@@ -144,7 +142,7 @@ aside li{
     align-items: center;
 }
 
-article img{
+.membership-section img{
     width: 80%;
 }
 
@@ -217,7 +215,6 @@ h3 span{
     text-transform: uppercase;
 }
 
-/*Info*/
 .info-section-container{
     display: flex;
     flex-direction: column;
@@ -279,7 +276,6 @@ h3 span{
     display: none;
 }
 
-/*Form*/
 .form-section{
     display: flex;
     justify-content: center;
@@ -447,7 +443,7 @@ h3 span{
     .membership-section-container h2{
         font-size: 2.2em;
     }
-
+    
     .membership-article-container-classes, .membership-article-container-classic, .membership-article-container-black{
         display: flex;
         flex-direction: column;
@@ -569,10 +565,196 @@ h3 span{
 }
 
 @media(min-width: 1024px) {
-    /*Aside*/
     aside{
         display: flex;
         justify-content: center;
+        min-width: 20%;
+        max-width: 25%; /*Change to pixel*/
+    }
+
+    aside a, aside p{
+        font-size: 1.3em;
+    }
+
+    .top-section{
+        width: 100%;
+        height: 624px;
+    }
+    
+    .top-section-container{
+        height: 624px;
+    }
+    
+    .top-section h2{
+        font-size: 3em;
+    }
+    
+    .top-section p{
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+
+    .advertisement-section-container{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 500px;
+    }
+    
+    .advertisement-section-container h2{
+        font-size: 1.9em;
+    }
+    
+    .advertisement-section-container p{
+        margin-top: 30px;
+        font-size: 1.4em;
+        line-height: 1.4em;
+    }
+    
+    .advertisement-image{
+        display: block;
+        width: 50%;
+    }
+
+    .activities-section-container{
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .activities-title-box{
+        width: 70%;
+        height: 112px;
+    }
+
+    .activities-section-container h2{
+        font-size: 2.5em;
+    }
+
+    .membership-title-box{ /*Change*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        width: 50%;
+        height: 53px;
+        margin: 70px 0px 60px 0px;
+        background-color: #373867;
+    }
+    
+    .membership-section-container h2{
+        color: #fff;
+        font-size: 1.25em;
+        text-transform: uppercase;
+    }
+
+    .membership-articles-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .membership-card-container h3{
+        font-size: 1.6em;
+    }
+    
+    .membership-card-container ul, p{
+        font-size: 0.95625em;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .info-section-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info-section-container h3{
+        font-size: 3em;
+        line-height: 1.4em;
+    }
+    
+    .info-section-container article{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .info-section-container h4, p{
+        font-size: 1.25em;
+    }
+    
+    .info-section-container img{
+        width: 273px;
+        height: 280px;
+    }
+
+    .form-section-container{
+        width: 70%;
+    }
+
+    .form-section-container h4{
+        font-size: 2em;
+        font-weight: 500;
+        text-transform: uppercase;
+        align-self: center;
+    }
+
+    #landing-bottom-question-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-question-one, .form-question-two, .form-question-three, .form-bottom-name, .form-bottom-surname, .form-bottom-email, .form-bottom-text-area-container{
+        margin-top: 27px;
+    }
+
+    .form-question-one, .form-question-two, .form-question-three{
+        font-size: 0.8em;
+    }
+
+    .form-question-one{
+        width: 35%;
+    }
+
+    .form-question-two{
+        width: 45%;
+    }
+
+    .form-question-three{
+        width: 60%;
+    }
+
+    .form-bottom-name, .form-bottom-surname{
+        width: 35%;
+    }
+
+    .form-bottom-surname{
+        margin-left: 6%;
+    }
+
+    .form-bottom-email{
+        width: 77%;
+    }
+
+    .form-bottom-text-area-container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 77%;
+    }
+
+    .form-bottom-text-area-container label{
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .form-bottom-text-area-container textarea{
+        width: 100%;
+    }
+
+    .form-bottom-input-submit{
         width: 20%;
+        margin: 5% 0 0 0;
+        font-size: 0.9em;
     }
 }
