@@ -3,8 +3,6 @@
 This repository is the weekly progress tracker in the radium rocket bootcamp.
 In it we will find a gym website simulacrum.
 
-#
-
 ## Weekly progression
 
 ### Week 01
@@ -38,4 +36,14 @@ In it we will find a gym website simulacrum.
 -CSS style created
 -CSS reset created
 -Week 3 progression added to the README
+```
+
+## Week 04
+
+```
+-Watch and learn about Flexbox CSS attribute
+-Make a restructuring of the HTML for better use of Flexbox
+-New css folder structure
+-CSS media added for responsive design
+-Week 4 progression added to the README
 ```
