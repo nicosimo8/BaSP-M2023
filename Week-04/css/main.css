@@ -1,11 +1,15 @@
+/*Main*/
+main{
+    display: flex;
+}
+
 /*Menu*/
 aside{
     display: none;
+    justify-content: flex-end;
     z-index: -100;
-    float: right;
     background-color: #373867;
     color: #fff;
-    width: 100%;
 }
 
 aside a{
@@ -21,11 +25,6 @@ aside ul{
 aside li{
     padding: 1em 1em;
     text-transform: uppercase;
-}
-
-.aside-container{
-    display: flex;
-    flex-direction: column;
 }
 
 /*Top*/
@@ -366,10 +365,7 @@ h3 span{
     background-color: #AACE9B;
 }
 
-@media(min-width: 390px) and (max-width: 600px){
-    /*// estilos correspondientes a mobile*/
-}
-@media(min-width: 601px) and (max-width: 1024px) {
+@media(min-width: 601px) and (max-width: 1023px) {
     /*Top*/
     .top-section{
         background-position: center;
@@ -579,6 +575,7 @@ h3 span{
 
     .form-bottom-input-submit{
         width: 20%;
+        margin: 0;
         font-size: 0.9em;
     }
 }
@@ -587,9 +584,6 @@ h3 span{
     aside{
         display: flex;
         justify-content: center;
-        float: left;
         width: 20%;
-        height: 5697px;
     }
-    
 }
