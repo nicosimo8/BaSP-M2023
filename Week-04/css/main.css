@@ -113,7 +113,14 @@ aside li{
     text-transform: uppercase;
 }
 
-.activities-section-container img{
+.activities-images-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities-images-container img{
     width: 269px;
     height: 270px;
 }
@@ -152,7 +159,7 @@ aside li{
     justify-content: space-between;
     align-items: center;
     width: 70%;
-    margin: -15% 0 20% 0px;
+    margin: -10% 0 20% 0px;
     background-color: #fff;
 }
 
@@ -443,13 +450,6 @@ h3 span{
     .membership-section-container h2{
         font-size: 2.2em;
     }
-    
-    .membership-article-container-classes, .membership-article-container-classic, .membership-article-container-black{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .membership-card-container{
         width: 60%;
@@ -569,11 +569,22 @@ h3 span{
         display: flex;
         justify-content: center;
         min-width: 20%;
-        max-width: 25%; /*Change to pixel*/
+        max-width: 271px;
     }
 
-    aside a, aside p{
+    aside a{
         font-size: 1.3em;
+    }
+
+    aside p{
+        max-width: 271px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .aside-container{
+        position: fixed;
+        height: 10%;
     }
 
     .top-section{
@@ -615,14 +626,8 @@ h3 span{
         width: 50%;
     }
 
-    .activities-section-container{
-        flex-direction: row;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-    }
-
     .activities-title-box{
-        width: 70%;
+        width: 700px;
         height: 112px;
     }
 
@@ -630,26 +635,32 @@ h3 span{
         font-size: 2.5em;
     }
 
-    .membership-title-box{ /*Change*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: flex-start;
-        width: 50%;
-        height: 53px;
+    .activities-images-container{
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+    .activities-images-container img{
+        width: 30%;
+        max-width: 460px;
+        height: 30%;
+        max-height: 460px;
+    }
+
+    .membership-title-box{
+        width: 700px;
+        height: 112px;
         margin: 70px 0px 60px 0px;
-        background-color: #373867;
     }
     
     .membership-section-container h2{
-        color: #fff;
-        font-size: 1.25em;
-        text-transform: uppercase;
+        font-size: 2.5em;
     }
 
     .membership-articles-container{
         display: flex;
-        justify-content: space-around;
     }
     
     .membership-card-container h3{
