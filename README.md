@@ -38,7 +38,7 @@ In it we will find a gym website simulacrum.
 -Week 3 progression added to the README
 ```
 
-## Week 04
+### Week 04
 
 ```
 -Watch and learn about Flexbox CSS attribute
@@ -46,4 +46,13 @@ In it we will find a gym website simulacrum.
 -New css folder structure
 -CSS media added for responsive design
 -Week 4 progression added to the README
+```
+
+### Week 05
+
+```
+-Watch and learn about JavaScript
+-Use the browser console to see the background operations
+-Did some new content excercises
+-Week 5 progression added to the README
 ```
