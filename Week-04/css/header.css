@@ -48,7 +48,7 @@ header{
     margin: 2px 0;
 }
 
-@media(min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
     .header-image-container img{
         width: 64px;
         height: 84px;
@@ -67,7 +67,7 @@ header{
         height: 3px;
     }
 }
-@media(min-width: 1024px) {    
+@media screen and (min-width: 1025px) {    
     .header-image-container img{
         width: 90.72px;
         height: 115px;
