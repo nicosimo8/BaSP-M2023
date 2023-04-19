@@ -3,6 +3,8 @@
 This repository is the weekly progress tracker in the radium rocket bootcamp.
 In it we will find a gym website simulacrum.
 
+---
+
 ## Weekly progression
 
 ### Week 01
@@ -46,6 +48,7 @@ In it we will find a gym website simulacrum.
 -New css folder structure
 -CSS media added for responsive design
 -Week 4 progression added to the README
+-Week 4 link [BaSP-W04-2023](https://nicosimo8.github.io/BaSP-M2023/Week-04)
 ```
 
 ### Week 05
@@ -55,4 +58,9 @@ In it we will find a gym website simulacrum.
 -Use the browser console to see the background operations
 -Did some new content excercises
 -Week 5 progression added to the README
+-Week 5 link [BaSP-W05-2023](https://nicosimo8.github.io/BaSP-M2023/Week-05)
 ```
+
+---
+
+[^1]: ***Author:*** *Nicolas Simonetti* [@nicosimo8](https://github.com/nicosimo8)
