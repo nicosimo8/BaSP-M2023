@@ -42,14 +42,25 @@ window.onload = function() {
       errorWarning[0].style.display = 'block';
   }
 
+  function passwordValidation(){
+    var pass = passwordInput.value;
+    
+    if(pass.length < 8) {
+      return false;
+    }else{
+      return true;
+    };
+  }
+
   function emailValidationCheck(e){
     e.preventDefault();
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     var emailValue = emailInput.value;
-    if(emailExpression.test(emailValue) != true){
+    if(emailExpression.test(emailValue) != true || passwordValidation() != true){
       emailValidationError();
+      alert('Can not Log-In!\ncheck your information');
     }else{
-      alert('Log-In success!');
+      alert('Log-In success!\n' + 'email: ' + emailInput.value + '\npassword: ' + passwordInput.value);
     }
   }
 
