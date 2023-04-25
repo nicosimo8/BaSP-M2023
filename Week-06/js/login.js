@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function(){
   var emailInput = document.querySelector('input[name="email"]');
   var passwordInput = document.querySelector('input[name="password"]');
   var emailLabel = document.querySelector('label[for="email"]');
@@ -6,7 +6,7 @@ window.onload = function() {
   var errorWarning = document.getElementsByClassName('login-form-error');
   var form = document.getElementById('login-form');
 
-  emailInput.onblur = function() {
+  emailInput.onblur = function(){
     if(emailInput.value == ''){
       emailLabel.classList.add('warningAsterisk');
       passwordLabel.classList.add('warningAsterisk');
@@ -15,7 +15,7 @@ window.onload = function() {
     }
   }
 
-  passwordInput.onblur = function() {
+  passwordInput.onblur = function(){
     if(passwordInput.value == ''){
       emailLabel.classList.add('warningAsterisk');
       passwordLabel.classList.add('warningAsterisk');
@@ -24,19 +24,19 @@ window.onload = function() {
     }
   }
 
-  emailInput.onfocus = function() {
+  emailInput.onfocus = function(){
     emailLabel.classList.remove('warningAsterisk');
     passwordLabel.classList.remove('warningAsterisk');
     errorWarning[0].style.display = 'none';
   }
 
-  passwordInput.onfocus = function() {
+  passwordInput.onfocus = function(){
     emailLabel.classList.remove('warningAsterisk');
     passwordLabel.classList.remove('warningAsterisk');
     errorWarning[0].style.display = 'none';
   }
 
-  function emailValidationError() {
+  function emailValidationError(){
       emailLabel.classList.add('warningAsterisk');
       errorWarning[0].innerText = '* enter a valid email'
       errorWarning[0].style.display = 'block';
