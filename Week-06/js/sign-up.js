@@ -302,11 +302,16 @@ window.onload = function() {
     if(stringRunner(phone)[0] > 0 || stringRunner(phone)[2] > 0){
       errorLabelAdd('Only numbers allowed', 4);
       checkCounter++;
-    }else if(stringRunner(adress)[0] + stringRunner(adress)[1] < 5){
+    }else if(phone.length != 10){
+      errorLabelAdd('Incorrect phone length', 4);
+      checkCounter++;
+    };
+    
+    if(stringRunner(adress)[0] + stringRunner(adress)[1] < 5){
       errorLabelAdd('Must contain at least 5 characters', 5);
       checkCounter++;
     }else if(stringRunner(adress)[0] < 3 || stringRunner(adress)[1] < 2){
-      errorLabelAdd('Street name must contain at least 3 characters and number at least 2 characters', 5);
+      errorLabelAdd('Street name must contain at least 3 characters, number at least 2 characters', 5);
       checkCounter++;
     }else if(stringRunner(adress)[2] < 1){
       if(stringRunner(adress)[3] < 1 || stringRunner(adress)[3] > 1){
@@ -334,9 +339,7 @@ window.onload = function() {
     if(stringRunner(postalCode)[0] > 0 || stringRunner(postalCode)[2] > 0){
       errorLabelAdd('Only numbers allowed', 7);
       checkCounter++;
-    };
-
-    if(stringRunner(postalCode)[1] < 4 || stringRunner(postalCode)[1] > 5){
+    }else if(stringRunner(postalCode)[1] < 4 || stringRunner(postalCode)[1] > 5){
       errorLabelAdd('Must contain 4 or 5 digits', 7);
       checkCounter++;
     };
@@ -349,9 +352,7 @@ window.onload = function() {
     if(pass.length < 8 || pass.length > 12){
       errorLabelAdd('Must contain between 8 and 12 characters', 10);
       checkCounter++;
-    };
-
-    if(stringRunner(pass)[2] < 1){
+    }else if(stringRunner(pass)[2] < 1){
       errorLabelAdd('Must contain at least 1 special character', 10);
       checkCounter++;
     }
