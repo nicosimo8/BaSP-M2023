@@ -74,11 +74,17 @@ Week 6 link [BaSP-W06-2023](https://nicosimo8.github.io/BaSP-M2023/Week-06/views
 -login and sign-up added
 -Week 6 progression added to the README
 ```
+
 ---
+
 - ## More about
-- ### **Index:** Here you can figure out about all features, info, contact, etc of the GYM and can access to Login and Sign-Up window. Also, if you have any questions, you can complete the form at the bottom of the page.
-- ### **Login:** In this window you can log-in to the GYM but first need to validate your credentials to gain access to your account.
-- ### **Sing-Up:** ¿Are you new?¿Need an account? This is the right place! Just complete the form to create a new account.
+
+- ### **Index:**
+- - #### Here you can figure out about all features, info, contact, etc of the GYM and can access to Login and Sign-Up window. Also, if you have any questions, you can complete the form at the bottom of the page.
+- ### **Login:**
+- - #### In this window you can log-in to the GYM but first need to validate your credentials to gain access to your account.
+- ### **Sing-Up:**
+- - #### ¿Are you new?¿Need an account? This is the right place! Just complete the form to create a new account.
 ---
 
 ***Author:*** *Nicolas Simonetti* [@nicosimo8](https://github.com/nicosimo8)
