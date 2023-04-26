@@ -3,6 +3,7 @@ main{
 }
 
 aside{
+  display: none;
   width: 268px;
   background-color: #373867;
   color: #fff;
@@ -62,7 +63,6 @@ aside a:active{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 40vw;
   margin: 10% 0;
   background-color: #FBFBFB;
   box-shadow: 4px 4px 4px #00000040, 4px 4px 12px #00000040;
@@ -145,4 +145,19 @@ form button{
 form button:hover{
   box-shadow: 0px 4px 4px #00000040, inset 4px 4px 4px #00000040;
   text-shadow: 4px 4px 4px #00000040;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+  
+}
+
+@media screen and (min-width: 1025px) {
+  aside{
+    display: block;
+  }
+
+  .sign-up-form-container{
+    width: 40vw;    
+  }
 }
