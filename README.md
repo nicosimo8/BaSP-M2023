@@ -61,6 +61,17 @@ In it we will find a gym website simulacrum.
 -Week 5 link [BaSP-W05-2023](https://nicosimo8.github.io/BaSP-M2023/Week-05)
 ```
 
+### Week 06
+
+```
+-Watch and learn about DOM
+-Use the browser console to debug
+-Did some new interaction with the website
+-login and sign-up added
+-Week 6 progression added to the README
+-Week 6 link [BaSP-W05-2023](https://nicosimo8.github.io/BaSP-M2023/Week-06)
+```
+
 ---
 
-[^1]: ***Author:*** *Nicolas Simonetti* [@nicosimo8](https://github.com/nicosimo8)
+***Author:*** *Nicolas Simonetti* [@nicosimo8](https://github.com/nicosimo8)
