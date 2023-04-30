@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/header.css">
+  <link rel="stylesheet" type="text/css" href="../css/sign-up.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <script src="../js/sign-up.js"></script>
+  <title>Sign-Up</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-image-container">
+        <img class="header-logo-radium-rocket"
+          alt="Radium rocket logo"
+          src="../../Assets/Images/main-logo-radiumrocket.png">
+      </div>
+      <div class="header-titles-container">
+        <h1 class="header-title-text">The best gym</h1>
+        <p class="header-subtitle-text">Mega rocket s.a.</p>
+      </div>
+      <div class="header-burger-container">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <aside>
+      <div class="aside-container">
+        <h1><span>Radium</span>Rocket</h1>
+        <nav>
+          <ul>
+            <li><a href="./login.html">Log-In</a></li>
+            <li><a href="./sign-up.html">Sign-Up</a></li>
+            <li><a href="./index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <section class="sign-up-section-container">
+      <div class="sign-up-form-container">
+        <div class="sign-up-form-title-box">
+          <h2>Sign-Up</h2>
+        </div>
+        <form id="sign-up-form">
+          <p class="sign-up-form-error"></p>
+          <fieldset>
+            <label for="first-name">Name</label>
+            <input type="text" name="first-name" placeholder="First Names">
+          </fieldset>
+          <fieldset>
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" placeholder="Last Names">
+          </fieldset>
+          <fieldset>
+            <label for="dni">Id</label>
+            <input type="text" name="dni" placeholder="ID">
+          </fieldset>
+          <fieldset>
+            <label for="date-birth">Date of birth</label>
+            <input type="date" name="date-birth" placeholder="dd/mm/yyyy">
+          </fieldset>
+          <fieldset>
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" placeholder="Ex: (3464)589929">
+          </fieldset>
+          <fieldset>
+            <label for="adress">Adress</label>
+            <input type="text" name="adress" placeholder="Adress">
+          </fieldset>
+          <fieldset>
+            <label for="city">City</label>
+            <input type="text" name="city" placeholder="City">
+          </fieldset>
+          <fieldset>
+            <label for="postal-code">Postal code</label>
+            <input type="text" name="postal-code" placeholder="Postal Code">
+          </fieldset>
+          <fieldset>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Email">
+          </fieldset>
+          <fieldset>
+            <!--Empty-->
+          </fieldset>
+          <fieldset>
+            <label for="password">Password</label>
+            <input type="text" name="password" placeholder="Password">
+          </fieldset>
+          <fieldset>
+            <label for="password-repeat">Repeat password</label>
+            <input type="text" name="password-repeat" placeholder="Repeat Password">
+          </fieldset>
+          <fieldset class="sign-up-form-membership-select">
+            <input type="radio" name="membership">
+            <label for="membership">Only-Classes</label>
+          </fieldset>
+          <fieldset class="sign-up-form-membership-select">
+            <input type="radio" name="membership">
+            <label for="membership">Classic</label>
+          </fieldset>
+          <fieldset class="sign-up-form-membership-select">
+            <input type="radio" name="membership">
+            <label for="membership">Black</label>
+          </fieldset>
+          <button type="submit" name="continue">Continue</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-social-media-box">
+        <a href="#"><img class="icon-facebook" src="../../Assets/Images/footer-social-logo-facebook.png" alt="Facebook logo"></a>
+        <a href="#"><img class="icon-instagram" src="../../Assets/Images/footer-social-logo-instagram.png" alt="Instagram logo"></a>
+        <a href="#"><img class="icon-twitter" src="../../Assets/Images/footer-social-logo-twitter.png" alt="Twitter logo"></a>
+      </div>
+      <div class="footer-copyright-box">
+        <p>Copyright © 2019. Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
