@@ -366,17 +366,60 @@ window.onload = function() {
   };
 
   function localSave(name, lastName, dni, dob, phone, address, city, zip, email, password){
-    localStorage.setItem('Name', name);
-    localStorage.setItem('Last Name', lastName);
-    localStorage.setItem('DNI', dni);
-    localStorage.setItem('Date of Birth', dob);
-    localStorage.setItem('Phone', phone);
-    localStorage.setItem('Address', address);
-    localStorage.setItem('City', city);
-    localStorage.setItem('ZIP', zip);
-    localStorage.setItem('Email', email);
-    localStorage.setItem('Password', password);
-  }
+    localStorage.setItem('name', name);
+    localStorage.setItem('lastname', lastName);
+    localStorage.setItem('dni', dni);
+    localStorage.setItem('dateofbirth', dob);
+    localStorage.setItem('phone', phone);
+    localStorage.setItem('address', address);
+    localStorage.setItem('city', city);
+    localStorage.setItem('zip', zip);
+    localStorage.setItem('email', email);
+    localStorage.setItem('password', password);
+  };
+
+
+  function localComplete(){
+    if(localStorage.getItem('name') != ''){
+      formInputElements[0].value = localStorage.getItem('name');
+    };
+
+    if(localStorage.getItem('lastname') != ''){
+      formInputElements[1].value = localStorage.getItem('lastname');
+    };
+
+    if(localStorage.getItem('dni') != ''){
+      formInputElements[2].value = localStorage.getItem('dni');
+    };
+    
+    if(localStorage.getItem('dateofbirth') != ''){
+      formInputElements[3].value = localStorage.getItem('dateofbirth');
+    };
+    
+    if(localStorage.getItem('phone') != ''){
+      formInputElements[4].value = localStorage.getItem('phone');
+    };
+    
+    if(localStorage.getItem('address') != ''){
+      formInputElements[5].value = localStorage.getItem('address');
+    };
+    
+    if(localStorage.getItem('city') != ''){
+      formInputElements[6].value = localStorage.getItem('city');
+    };
+    
+    if(localStorage.getItem('zip') != ''){
+      formInputElements[7].value = localStorage.getItem('zip');
+    };
+    
+    if(localStorage.getItem('email') != ''){
+      formInputElements[8].value = localStorage.getItem('email');
+    };
+    
+    if(localStorage.getItem('password') != ''){
+      formInputElements[9].value = localStorage.getItem('password');
+    };
+  };
 
   function submitForm(name, lastName, dni, dob, phone, address, city, zip, email, password){
     dob = dob.substring(5, 7) + '/' + dob.substring(8, 10) + '/' + dob.substring(0, 4);
@@ -409,7 +452,7 @@ window.onload = function() {
       }).catch(function(error){
         console.log('error', error);
     });
-  }
+  };
 
 //credentials
 //email: rose@radiumrocket.com
@@ -425,6 +468,7 @@ window.onload = function() {
     if(checkCounter > 0){
       alert('Can not Sign-Up!\ncheck your information');
     }else{
+
       submitForm(formInputElements[0].value,
         formInputElements[1].value,
         formInputElements[2].value,
@@ -436,21 +480,22 @@ window.onload = function() {
         formInputElements[8].value,
         formInputElements[9].value
       );
-      alert('Sign-Up success!\n' +
-        'Name: ' + formInputElements[0].value +
-        '\nLast Name: ' + formInputElements[1].value +
-        '\nID: ' + formInputElements[2].value +
-        '\nDate of Birth: ' + formInputElements[3].value +
-        '\nPhone: ' + formInputElements[4].value +
-        '\nAdress: ' + formInputElements[5].value +
-        '\nCity: ' + formInputElements[6].value +
-        '\nPostal Code: ' + formInputElements[7].value +
-        '\nEmail: ' + formInputElements[8].value +
-        '\nPassword: ' + formInputElements[9].value +
-        '\nPassword Repeat: ' + formInputElements[10].value);
-    };
-  }
 
+      localSave(formInputElements[0].value,
+        formInputElements[1].value,
+        formInputElements[2].value,
+        formInputElements[3].value,
+        formInputElements[4].value,
+        formInputElements[5].value,
+        formInputElements[6].value,
+        formInputElements[7].value,
+        formInputElements[8].value,
+        formInputElements[9].value
+      );
+    };
+  };
+
+  localComplete();
   form.addEventListener('submit', errorLabelRemove);
   form.addEventListener('submit', errorCheckValidation);
 };
