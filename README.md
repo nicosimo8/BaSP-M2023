@@ -75,6 +75,17 @@ Week 6 link [BaSP-W06-2023](https://nicosimo8.github.io/BaSP-M2023/Week-06/views
 -Week 6 progression added to the README
 ```
 
+## Week 07
+---
+Week 7 link [BaSP-W07-2023](https://nicosimo8.github.io/BaSP-M2023/Week-07/views)
+
+```
+-Watch and learn about asynchronism
+-Use callbacks
+-Did fake server calls to obtain a response
+-login and sign-up updated with this new feature
+-Week 7 progression added to the README
+```
 ---
 
 - ## More about
