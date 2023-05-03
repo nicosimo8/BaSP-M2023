@@ -53,7 +53,7 @@ window.onload = function(){
 
   function emailValidationError(){
       emailLabel.classList.add('warningAsterisk');
-      errorWarning[0].innerText = '* enter a valid email'
+      errorWarning[0].innerText = '* enter a valid email and password'
       errorWarning[0].style.display = 'block';
   };
 
@@ -74,8 +74,8 @@ window.onload = function(){
     var emailValue = emailInput.value;
     var passValue = passwordInput.value;
     if(emailExpression.test(emailValue) != true || passwordValidation() != true){
-      emailValidationError();
       alert('Can not Log-In!\ncheck your information');
+      emailValidationError();
     }else{
       fetch('https://api-rest-server.vercel.app/login' + 
       '?email=' + emailValue +

@@ -90,46 +90,57 @@ window.onload = function(){
 
   formInputElements[0].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[1].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[2].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[3].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[4].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[5].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[6].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[7].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[8].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[9].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   formInputElements[10].onfocus = function(){
     errorCheckRemove();
+    errorLabelRemove();
   };
 
   function errorLabelAdd(errorString, labelIndex){
@@ -144,9 +155,10 @@ window.onload = function(){
     checkCounter = 0;
     var formParagElements = document.querySelectorAll('form p');
 
-    for(i = 0; i < (formParagElements.length); i++){
+    for(i = 0; i < formParagElements.length; i++){
       if(formParagElements[i].classList.contains('added')){
-        var element = formFieldElements[i - 1];
+        var element = formFieldElements[i]; //if element < fields then "i" did not match - need to be fixed
+        formParagElements[i].style.display = 'none'; //for now, need to remove <P> element - need to be fixed
         while(element.children.length > 2){
           element.removeChild(element.children[2]);
         };
@@ -440,7 +452,7 @@ window.onload = function(){
         localSave(data.data.name,
           data.data.lastName,
           data.data.dni,
-          data.data.dob,
+          formInputElements[3].value,
           data.data.phone,
           data.data.address,
           data.data.city,
