@@ -12,8 +12,8 @@ window.onload = function(){
       passwordLabel.classList.add('warningAsterisk');
       errorWarning[0].innerText = '* fields are requiered'
       errorWarning[0].style.display = 'block';
-    }
-  }
+    };
+  };
 
   passwordInput.onblur = function(){
     if(passwordInput.value == ''){
@@ -21,26 +21,41 @@ window.onload = function(){
       passwordLabel.classList.add('warningAsterisk');
       errorWarning[0].innerText = '* fields are requiered'
       errorWarning[0].style.display = 'block';
-    }
-  }
+    };
+  };
 
   emailInput.onfocus = function(){
     emailLabel.classList.remove('warningAsterisk');
     passwordLabel.classList.remove('warningAsterisk');
     errorWarning[0].style.display = 'none';
-  }
+  };
 
   passwordInput.onfocus = function(){
     emailLabel.classList.remove('warningAsterisk');
     passwordLabel.classList.remove('warningAsterisk');
     errorWarning[0].style.display = 'none';
-  }
+  };
+
+  function localSave(email, password){
+    localStorage.setItem('email', email);
+    localStorage.setItem('password', password);
+  };
+
+  function localComplete(){
+    if(localStorage.getItem('email') != ''){
+      emailInput.value = localStorage.getItem('email');
+    };
+    
+    if(localStorage.getItem('password') != ''){
+      passwordInput.value = localStorage.getItem('password');
+    };
+  };
 
   function emailValidationError(){
       emailLabel.classList.add('warningAsterisk');
       errorWarning[0].innerText = '* enter a valid email'
       errorWarning[0].style.display = 'block';
-  }
+  };
 
   function passwordValidation(){
     var pass = passwordInput.value;
@@ -50,26 +65,32 @@ window.onload = function(){
     }else{
       return true;
     };
-  }
+  };
 
   function emailValidationCheck(e){
     e.preventDefault();
+
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     var emailValue = emailInput.value;
+    var passValue = passwordInput.value;
     if(emailExpression.test(emailValue) != true || passwordValidation() != true){
       emailValidationError();
       alert('Can not Log-In!\ncheck your information');
     }else{
-      alert('Log-In success!\n' + 'email: ' + emailInput.value + '\npassword: ' + passwordInput.value);
-    }
-  }
-  
-//credentials
-//email: rose@radiumrocket.com
-//password: BaSProfessional1
-//La URL para la request de cada formulario es: 
-//Login: https://api-rest-server.vercel.app/login
-//Signup: https://api-rest-server.vercel.app/signup
+      fetch('https://api-rest-server.vercel.app/login' + 
+      '?email=' + emailValue +
+      '&password=' + passValue
+      )
+      .then(function(response){
+        alert('Log-In success!\n' + 'email: ' + emailValue + '\nValid password');
+        localSave(emailValue, passValue);
+        return response.json();
+      }).catch(function(error){
+        alert('Error!\n' + error);
+      });
+    };
+  };
 
+  localComplete();
   form.addEventListener('submit', emailValidationCheck);
-}
+};

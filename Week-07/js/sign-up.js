@@ -1,11 +1,10 @@
-window.onload = function() {
+window.onload = function(){
   var errorWarning = document.getElementsByClassName('sign-up-form-error');
   var form = document.getElementById('sign-up-form');
   var formFieldElements = document.querySelectorAll('form fieldSet');
   var formLabelElements = document.querySelectorAll('form label');
   var formInputElements = document.querySelectorAll('form input');
 
-  var errorCheck = true;
   var checkCounter = 0;
 
   function errorCheckDisplay(){
@@ -150,10 +149,10 @@ window.onload = function() {
         var element = formFieldElements[i - 1];
         while(element.children.length > 2){
           element.removeChild(element.children[2]);
-        }
+        };
       };
     };
-  }
+  };
 
   function stringRunner(string){
     var strMatch = 0;
@@ -194,7 +193,6 @@ window.onload = function() {
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     var pass = formInputElements[9].value;
     var passRep = formInputElements[10].value;
-    var infoReturn = [];
 
     if(name.length < 3){
       errorLabelAdd('Must contain at least 3 characters', 0);
@@ -282,7 +280,7 @@ window.onload = function() {
               errorLabelAdd('Invalid day', 3);
               checkCounter++;
             };
-          }else {
+          }else{
             if(parseInt(birth[0]) > 2){
               errorLabelAdd('Invalid day', 3);
               checkCounter++;
@@ -378,7 +376,6 @@ window.onload = function() {
     localStorage.setItem('password', password);
   };
 
-
   function localComplete(){
     if(localStorage.getItem('name') != ''){
       formInputElements[0].value = localStorage.getItem('name');
@@ -437,29 +434,40 @@ window.onload = function() {
       '&password=' + password)
       .then(function(response){
         return response.json();
-      }).then(function(data){
-        alert('Account created\n' +
-          data.name + '\n' +
-          data.lastName + '\n' +
-          data.dni + '\n' +
-          data.dob + '\n' +
-          data.phone + '\n' +
-          data.address + '\n' +
-          data.city + '\n' +
-          data.zip + '\n' +
-          data.email + '\n' +
-          data.password + '\n');
-      }).catch(function(error){
+      })
+      .then(function(data){
+        
+        localSave(data.data.name,
+          data.data.lastName,
+          data.data.dni,
+          data.data.dob,
+          data.data.phone,
+          data.data.address,
+          data.data.city,
+          data.data.zip,
+          data.data.email,
+          data.data.password
+        );
+
+        alert(data.msg + '\n' +
+          data.data.name + '\n' +
+          data.data.lastName + '\n' +
+          data.data.dni + '\n' +
+          data.data.dob + '\n' +
+          data.data.phone + '\n' +
+          data.data.address + '\n' +
+          data.data.city + '\n' +
+          data.data.zip + '\n' +
+          data.data.email + '\n' +
+          data.data.password + '\n'
+        );
+
+      })
+      .catch(function(error){
+        alert('Error: Can not reach the server\n' + error);
         console.log('error', error);
     });
   };
-
-//credentials
-//email: rose@radiumrocket.com
-//password: BaSProfessional1
-//La URL para la request de cada formulario es: 
-//Login: https://api-rest-server.vercel.app/login
-//Signup: https://api-rest-server.vercel.app/signup
 
   function errorCheckValidation(e){
     e.preventDefault();
@@ -468,20 +476,7 @@ window.onload = function() {
     if(checkCounter > 0){
       alert('Can not Sign-Up!\ncheck your information');
     }else{
-
       submitForm(formInputElements[0].value,
-        formInputElements[1].value,
-        formInputElements[2].value,
-        formInputElements[3].value,
-        formInputElements[4].value,
-        formInputElements[5].value,
-        formInputElements[6].value,
-        formInputElements[7].value,
-        formInputElements[8].value,
-        formInputElements[9].value
-      );
-
-      localSave(formInputElements[0].value,
         formInputElements[1].value,
         formInputElements[2].value,
         formInputElements[3].value,
